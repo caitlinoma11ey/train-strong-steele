@@ -1,0 +1,17 @@
+.navbar {
+  padding: 28px 0px; 
+  margin: 0px 125px;
+  background-color: transparent;
+  color: black;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  justify-content: flex-end;
+}
+
+.navbar li {
+  list-style: none;
+}
