@@ -1,0 +1,19 @@
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+  margin: 0px 125px;
+  height: 100%;
+  color: white;
+}
+
+.headerAccent {
+  color: var(--primary-blue);
+}
+
+.headerSecondaryTxt {
+  font-size: 32px;
+  font-family: 'Outfit';
+  font-weight: 500;
+}
