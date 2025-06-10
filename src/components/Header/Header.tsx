@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Button from "./Button";
+import Button from "../Button/Button";
 import styles from "./Header.module.scss"
 
 export default function Header() {
