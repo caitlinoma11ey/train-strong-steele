@@ -3,15 +3,20 @@
   margin: 0px 125px;
   background-color: transparent;
   color: black;
-}
 
-.navbar ul {
-  display: flex;
-  flex-direction: row;
-  gap: 32px;
-  justify-content: flex-end;
-}
+  ul {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    justify-content: flex-end;
+  }
 
-.navbar li {
-  list-style: none;
+  li {
+    list-style: none;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
 }
