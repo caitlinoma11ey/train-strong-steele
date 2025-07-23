@@ -1,0 +1,62 @@
+@import '../mixins.scss';
+
+.grid {
+  display: grid;
+  columns: 12;
+  column-gap: 24px;
+  margin: 0px 125px;
+}
+
+/* .column-1 {
+  grid-column: span 12;
+} */
+
+.heroSection {
+  position: relative;
+  height: 95vh;
+  width: 100%;
+  background-image: url('/images/header-background.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.gridContainer {
+  display: grid;
+  margin: 64px 125px;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  column-gap: 32px;
+  row-gap: 50px;
+  align-items: stretch; /* All children take the height of the tallest */
+
+  @include xs {
+      margin: 64px 64px;
+    }
+}
+
+.gridColumnSm {
+  grid-column: span 4;
+}
+
+.gridColumnLg {
+  grid-column: span 12;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-column: 1 / -1; // Span all columns of the parent grid
+  grid-template-columns: repeat(3, 1fr); // 3 columns for services
+  gap: 32px; // gap between service cards
+  width: 100%;
+  align-items: stretch;
+}
+
+.servicesGridItem {
+  grid-column: span 1;
+
+  @include sm {
+    grid-column: span 3;
+  }
+}

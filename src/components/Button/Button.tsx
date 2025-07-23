@@ -7,8 +7,3 @@ export default function Button({ text, action }: ButtonProps) {
     </button>
   );
 }
-
-type ButtonProps = {
-  text: string;
-  action: () => void;
-};
