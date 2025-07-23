@@ -36,6 +36,11 @@
     }
 }
 
+.gridColumnBtn {
+  grid-column: 6 / span 2;
+  align-items: center;
+}
+
 .gridColumnSm {
   grid-column: span 4;
 }

@@ -1,12 +1,14 @@
+"use client";
+
 import styles from "./page.module.scss";
 import Header from "@/components/Header/Header";
 import Heading from "@/components/Heading/Heading";
 import NavBar from "@/components/NavBar/NavBar";
 import Service from "@/components/Service/Service";
-import { services } from "../constants/constants"
+import { services } from "../constants/constants";
+import Button from "@/components/Button/Button";
 
 export default function Home() {
-  
   return (
     <>
       <div className={styles.heroSection}>
@@ -34,6 +36,9 @@ export default function Home() {
               />
             </div>
           ))}
+        </div>
+        <div className={styles.gridColumnBtn}>
+          <Button text="Enquire now" action={() => {}} />
         </div>
       </div>
     </>
