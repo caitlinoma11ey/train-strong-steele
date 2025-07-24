@@ -6,7 +6,6 @@ import Heading from "@/components/Heading/Heading";
 import NavBar from "@/components/NavBar/NavBar";
 import Service from "@/components/Service/Service";
 import { services } from "../constants/constants";
-import Button from "@/components/Button/Button";
 
 export default function Home() {
   return (
@@ -15,27 +14,27 @@ export default function Home() {
         <NavBar />
         <Header />
       </div>
-      <div className={styles.gridContainer}>
-        <div className={styles.gridColumnLg}>
+      <div className={styles.contentContainer}>
+        <div className={styles.clearContent}>
           <Heading
             mainHeading="Services"
-            subHeading="Tailored coaching solutions to help you achieve your gooals"
+            subHeading="Tailored coaching solutions to help you achieve your goals"
           />
-        </div>
-        <div className={styles.servicesGrid}>
-          {services.map((service, index) => (
-            <div className={styles.servicesGridItem} key={index}>
-              <Service
-                key={index}
-                imgIndex={index + 1}
-                title={service.title}
-                description={service.description}
-                dotpoints={service.dotpoints}
-                location={service.location}
-                price={service.price}
-              />
-            </div>
-          ))}
+          <div className={styles.servicesGrid}>
+            {services.map((service, index) => (
+              <div className={styles.servicesGridItem}  key={index}>
+                <Service
+                  key={index}
+                  imgIndex={index + 1}
+                  title={service.title}
+                  description={service.description}
+                  dotpoints={service.dotpoints}
+                  location={service.location}
+                  price={service.price}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </>
