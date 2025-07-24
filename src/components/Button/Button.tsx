@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "./Button.module.scss";
 
 export default function Button({ text, action }: ButtonProps) {
@@ -7,8 +9,3 @@ export default function Button({ text, action }: ButtonProps) {
     </button>
   );
 }
-
-type ButtonProps = {
-  text: string;
-  action: () => void;
-};

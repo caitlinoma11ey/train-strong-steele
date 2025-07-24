@@ -40,7 +40,9 @@ export default function Header() {
         </h1>
         <p className={styles.headerSecondaryTxt}>with Train Strong Steele</p>
       </div>
-      <Button text="Start your journey" action={onButtonClick} />
+      <div className={styles.headerButtonContainer}>
+        <Button text="Start your journey" action={onButtonClick} />
+      </div>
     </div>
   );
 }

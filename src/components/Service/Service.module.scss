@@ -1,0 +1,79 @@
+.container {
+  display: flex;
+  flex-direction: column; 
+  height: 100%;
+}
+
+#image {
+  width: 100%;
+  height: auto;
+  border-radius: 20px 20px 0px 0px;
+  flex-shrink: 0;
+}
+
+.content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 16px 16px 16px;
+  border: solid 2px var(--border-grey);
+  border-top: none;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.nameAndPrice {
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#name {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#pricePill {
+  font-size: 14px;
+  color: #016E99;
+  background-color: var(--pill-blue);
+  padding: 5px 17px;
+  border-radius: 20px;
+  font-weight: 400;
+}
+
+.dotpoints {
+  list-style: none;
+
+  li {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+
+  li::before {
+    content: "";
+    flex-shrink: 0;
+    width: 1rem;
+    height: 1rem;
+    margin-top: 2px;
+    background-size: contain;
+    background: url('/images/bullet-point.svg') no-repeat center center;
+  }
+}
+
+.location {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+#locationIcon {
+  height: 24px;
+  width: 24px;
+  padding: 0px;
+  margin: 0px;
+}
