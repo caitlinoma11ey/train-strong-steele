@@ -37,9 +37,6 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <div className={styles.gridColumnBtn}>
-          <Button text="Enquire now" action={() => {}} />
-        </div>
       </div>
     </>
   );
