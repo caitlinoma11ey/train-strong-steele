@@ -18,47 +18,67 @@
   flex-direction: column;
 }
 
-.gridContainer {
-  display: grid;
-  margin: 64px auto; // Center the grid horizontally
-  grid-template-columns: repeat(12, 1fr);
-  max-width: 1280px; // Standard max width for readability
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 64px;
+  margin-top: 64px;
+}
+
+.clearContent {
+  margin: 0px auto;
+  padding: 0px 125px;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
   width: 100%;
-  column-gap: 32px;
-  row-gap: 50px;
-  align-items: stretch;
-  justify-items: stretch; // Stretch items to fill columns
+  box-sizing: border-box;
+
+  @include xxs {
+    padding: 0px 28px;
+  } 
 
   @include xs {
-    margin: 64px 16px; // Add side margin for small screens
-    grid-template-columns: repeat(4, 1fr);
-    max-width: 100%;
-  }
-}
+    padding: 0px 64px;
+  } 
 
-.gridColumnSm {
-  grid-column: span 4;
-}
-
-.gridColumnLg {
-  grid-column: span 12;
-
-  @include xs {
-    grid-column: span 4;
+  @include sm {
+    padding: 0px 64px;
   }
 }
 
 .servicesGrid {
   display: grid;
-  grid-column: 1 / -1; // Span all columns of the parent grid
   grid-template-columns: repeat(3, 1fr); // 3 columns for services
-  gap: 32px; // gap between service cards
+  gap: 32px;
   width: 100%;
   align-items: stretch;
+
+  @include xxs {
+    gap: 24px;
+  }
+
+  @include xs {
+    gap: 24px;
+  }
+
+  @include sm {
+    gap: 24px;
+  }
 }
 
 .servicesGridItem {
   grid-column: span 1;
+
+  @include xxs {
+    grid-column: span 3;
+  } 
+
+  @include xs {
+    grid-column: span 3;
+  } 
 
   @include sm {
     grid-column: span 3;
