@@ -1,4 +1,4 @@
-@import '../mixins.scss';
+@import "../mixins.scss";
 
 .grid {
   display: grid;
@@ -7,15 +7,11 @@
   margin: 0px 125px;
 }
 
-/* .column-1 {
-  grid-column: span 12;
-} */
-
 .heroSection {
   position: relative;
   height: 95vh;
   width: 100%;
-  background-image: url('/images/header-background.png');
+  background-image: url("/images/header-background.png");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -24,21 +20,20 @@
 
 .gridContainer {
   display: grid;
-  margin: 64px 125px;
+  margin: 64px auto; // Center the grid horizontally
   grid-template-columns: repeat(12, 1fr);
-  align-items: center;
+  max-width: 1280px; // Standard max width for readability
+  width: 100%;
   column-gap: 32px;
   row-gap: 50px;
-  align-items: stretch; /* All children take the height of the tallest */
+  align-items: stretch;
+  justify-items: stretch; // Stretch items to fill columns
 
   @include xs {
-      margin: 64px 64px;
-    }
-}
-
-.gridColumnBtn {
-  grid-column: 6 / span 2;
-  align-items: center;
+    margin: 64px 16px; // Add side margin for small screens
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 100%;
+  }
 }
 
 .gridColumnSm {
@@ -47,6 +42,10 @@
 
 .gridColumnLg {
   grid-column: span 12;
+
+  @include xs {
+    grid-column: span 4;
+  }
 }
 
 .servicesGrid {
