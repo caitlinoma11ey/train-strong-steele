@@ -2,10 +2,26 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
   text-align: center;
 }
+
+.right {
+  text-align: right;
+}
+
 .subHeading {
   font-size: 24px;
   font-weight: regular;
   color: var(--text-grey);
 }
+
+.meetRobina {
+  color: #85D5FC;
+} 
