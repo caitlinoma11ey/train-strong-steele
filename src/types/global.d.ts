@@ -7,7 +7,8 @@ type ButtonProps = {
 
 type HeadingProps = {
   mainHeading: string;
-  subHeading: string
+  subHeading: string;
+  align?: "left" | "center" | "right";
 };
 
 

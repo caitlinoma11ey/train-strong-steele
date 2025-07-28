@@ -26,6 +26,7 @@ li, ul {
   --button-blue: #85D5FC;
   --pill-blue: #E2F5FE;
   --border-grey: #D9D9D9;
+  --background-blue: #111520;
 }
 
 h1,
@@ -56,10 +57,12 @@ h2 {
 
 p {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
-ul {
+ul li {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
+  list-style-position: inside;
 }
